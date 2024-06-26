@@ -1,0 +1,94 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Main container styles */
+.App {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Learner card styles */
+.learner {
+  background-color: #badccec9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.learner h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.learner p {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.learner h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+/* Score list styles */
+.Score {
+  list-style-type: none;
+  padding: 0;
+}
+
+.Score li {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+
+  .learner {
+    padding: 15px;
+  }
+
+  .learner h2 {
+    font-size: 1.5rem;
+  }
+
+  .learner h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .App {
+    max-width: 90%;
+  }
+
+  .learner {
+    padding: 10px;
+  }
+
+  .learner h2 {
+    font-size: 1.3rem;
+  }
+
+  .learner h3 {
+    font-size: 1rem;
+  }
+}
